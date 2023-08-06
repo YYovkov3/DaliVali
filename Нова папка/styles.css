@@ -50,7 +50,36 @@
     border-radius: 12px;
     font-size: 30px;
 }
-
+.cloudss{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; 
+    background-image: url("slunchevo_vreme-680x365_c1.jpg");
+    background-size: cover;
+    animation: cloudsAnimation 10s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cloudsb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; 
+    background-image: url("volna-bryzgi-solnce-3072.jpg");
+    background-size: cover;
+    animation: cloudsAnimation 10s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .clouds {
     position: absolute;
     top: 0;
@@ -59,7 +88,7 @@
     height: 400px; 
     background-image: url("clouds_shutterstock_193491221.jpg");
     background-size: cover;
-    animation: cloudsAnimation 10s linear infinite;
+    animation: cloudsAnimation 4s linear infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +103,7 @@
 }
 @keyframes cloudsAnimation {
     0% {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
     100% {
         transform: translateX(100%);
@@ -82,4 +111,12 @@
 }
 .card:hover {
     transform: scale(1.1); 
+}
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: black;
 }
